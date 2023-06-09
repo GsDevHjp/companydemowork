@@ -1,0 +1,29 @@
+#wrapper{
+    width: 50%;
+    margin: 0px auto;
+    
+}
+mat-card-header {
+    margin: auto;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+mat-form-field {
+    width: 300px;
+}
+
+mat-card {
+    background-color: whitesmoke;
+}
+
+.example-chip-list {
+    margin: 0px 150px 0px 150px;
+    width: 80%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
