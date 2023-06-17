@@ -1,0 +1,30 @@
+<div id="wrapper">
+    <form [formGroup]="user_form">
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input formControlName="name" matInput placeholder="Name">
+      </mat-form-field><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Mobile</mat-label>
+        <input type="number" formControlName="mobile" matInput placeholder="Mobile">
+      </mat-form-field><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput placeholder="email">
+      </mat-form-field><br>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" matInput placeholder="password">
+      </mat-form-field><br>
+
+      <input formControlName="id" readonly hidden>
+      <span class="submit">
+        <button mat-raised-button color="primary" (click)="onsubmit()"
+          [disabled]="!user_form.valid">{{actionBtn}}</button>
+      </span>
+    </form>
+  </div>

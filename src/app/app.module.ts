@@ -11,10 +11,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input'
 import {MatIconModule} from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
+import { WebdesignComponent } from './webdesign/webdesign.component'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormComponent } from './form/form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsertableComponent } from './usertable/usertable.component';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    WebdesignComponent,
+    FormComponent,
+    UsertableComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,10 +41,17 @@ import {MatButtonModule} from '@angular/material/button'
     MatInputModule,
     MatIconModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    FontAwesomeModule,
+    HttpClientModule,
+    MatTableModule,
+    MatTableModule,
+    MatDialogModule,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
 
